@@ -19,7 +19,7 @@ is the result after decrementing the TTL values at each hop.
 
 ## Basic Network Management Commands
 
-### Debian
+### Ubuntu
 $ vagrant init ubuntu/trusty64; vagrant up --provider virtualbox
 $ vagrant ssh
 $ sudo su
@@ -46,9 +46,9 @@ $ grep ssh /etc/services
 $ cat /etc/network/interfaces
 
 Configuring network cards for dhcp is good practice for clients, but servers usually require a fixed ip address.
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
-# The loopback network interface
+### This file describes the network interfaces available on your system
+### and how to activate them. For more information, see interfaces(5).
+### The loopback network interface
 auto lo
 iface lo inet loopback
 auto eth0
